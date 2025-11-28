@@ -6,7 +6,27 @@ public class Student {
 	       int grade;
 	       int year;
 	       
+	       
+	       public Student (String firstName , String lastName , int registration , int grade , int year) {
+	    	   this.firstName = firstName;
+	    	   this.lastName = lastName;
+	    	   this.registration = registration;
+	    	   this.grade = grade;
+	    	   this.year = year ; 
+	       }
 	    
+	       public Student (String firstName , String lastName , int year) {
+	    	   this.firstName = firstName;
+	    	   this.lastName = lastName;
+	    	   this.year = year ;
+	    	   
+	       }
+	       
+	       public Student (int registration ,int grade ) {
+	    	   this.registration = registration;
+	    	   this.grade = grade;
+	    	   
+	       }
 	       
 	       
 	       
@@ -28,15 +48,17 @@ public class Student {
 
 	    	   public int changeYearIfApproved(){
 	    		   if (grade >= 60) {
+	    			   this.year= this.year + 1;
 	    			   System.out.println("Felicidades alumno pasas al siguiente año");
-	    			   return year+1;
-	    			  
+	    			   return this.year;
 	    		   }
-	    	       return 0;
+	    		   else {
+	    			   return year;
+	    		   }
 	    	   }
 	       
 	       
 	       
 	       
 	  
-}
+} //class student 

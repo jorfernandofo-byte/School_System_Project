@@ -1,5 +1,9 @@
 
 public class Courses {
+	String courseName;
+	String professorName;
+	int year;
+	
 
 	   public void enroll(Student student){
 		      //TODO add the student to the collection
@@ -19,6 +23,10 @@ public class Courses {
 		       //TODO implement
 		       return 0;
 		   }
+		   
+		   
+
+		   
 	
 	
 	
